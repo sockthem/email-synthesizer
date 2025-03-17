@@ -21,3 +21,30 @@ Running the Application
 
 Start the Streamlit app:
 streamlit run app.py
+
+Using the Application-
+
+Configure Settings:
+
+Enter your OpenAI API key in the sidebar
+Adjust transformation settings as needed (company name, location, industry, etc.)
+
+Input Data:
+
+Choose between "Direct Email Input" or "Upload File" tabs
+For direct input: Paste email text directly into the text area
+For file upload: Upload a CSV or Excel file containing email data
+
+Generate Synthetic Emails:
+
+Click "Generate Synthetic Email" (for direct input) or select emails and click "Generate Synthetic Emails" (for file upload)
+Wait for processing to complete
+
+Review Results:
+
+Compare original and synthetic emails side-by-side
+Check highlighted changes (color-coded by type)
+Review validation results for any issues
+
+Export Data (optional):
+Click "Export as CSV" to download the results
