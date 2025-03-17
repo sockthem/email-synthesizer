@@ -26,7 +26,8 @@ Using the Application-
 
 Configure Settings:
 
-Enter your OpenAI API key in the sidebar
+Enter your OpenAI API key in the sidebar.
+
 Adjust transformation settings as needed (company name, location, industry, etc.)
 
 Input Data:
