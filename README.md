@@ -1,51 +1,63 @@
-# email-synthesizer
-Email Synthesizer is a tool for transforming real business emails into synthetic versions for AI training, testing, and demonstration purposes. It preserves the semantic intent and structure of original communications while replacing all personally identifiable information (PII) and company-specific references.
+# Email Synthesizer
 
-Email Synthesizer - Documentation
+## Overview
+Email Synthesizer is a powerful tool designed to transform real business emails into synthetic versions for AI training, testing, and demonstrations. It ensures the preservation of semantic intent and structure while removing all personally identifiable information (PII) and company-specific references.
 
-Prerequisites
-Python 3.9 or higher
-OpenAI API key (for LLM-based transformations)
+## Features
+- **LLM-Based Transformation:** Uses OpenAI's language models to generate synthetic email versions.
+- **Privacy Protection:** Automatically removes and replaces sensitive information.
+- **Flexible Input Options:** Supports direct email input and bulk processing via file uploads.
+- **Side-by-Side Comparison:** View original and synthetic emails with highlighted changes.
+- **Customizable Settings:** Adjust transformation parameters, such as company names, locations, and industries.
+- **Exportable Results:** Save transformed emails as CSV files for further use.
 
-Installation
-Clone the repository: 
-git clone https://github.com/yourusername/email-synthesizer.git
+## Prerequisites
+- Python 3.9 or higher
+- OpenAI API key (for LLM-based transformations)
 
-Navigate to the project directory:
-cd email-synthesizer
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/email-synthesizer.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd email-synthesizer
+   ```
+3. Install required dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-Install required packages:
-pip install -r requirements.txt
+## Usage
 
-Running the Application
-
-Start the Streamlit app:
+### Running the Application
+Start the Streamlit app with the following command:
+```sh
 streamlit run app.py
+```
 
-Using the Application-
+### Using the Application
+#### 1. Configure Settings
+- Enter your OpenAI API key in the sidebar.
+- Adjust transformation settings as needed (e.g., company name, location, industry, etc.).
 
-Configure Settings:
+#### 2. Input Data
+Choose one of the following input methods:
+- **Direct Email Input:** Paste the email text directly into the provided text area.
+- **File Upload:** Upload a CSV or Excel file containing multiple emails for batch processing.
 
-Enter your OpenAI API key in the sidebar.
+#### 3. Generate Synthetic Emails
+- Click **"Generate Synthetic Email"** (for direct input) or select emails and click **"Generate Synthetic Emails"** (for file uploads).
+- Wait for processing to complete.
 
-Adjust transformation settings as needed (company name, location, industry, etc.)
+#### 4. Review Results
+- View original and synthetic emails side-by-side.
+- Changes are highlighted using a color-coded system.
+- Review validation results to ensure accuracy.
 
-Input Data:
+#### 5. Export Data (Optional)
+- Click **"Export as CSV"** to download the results.
 
-Choose between "Direct Email Input" or "Upload File" tabs
-For direct input: Paste email text directly into the text area
-For file upload: Upload a CSV or Excel file containing email data
-
-Generate Synthetic Emails:
-
-Click "Generate Synthetic Email" (for direct input) or select emails and click "Generate Synthetic Emails" (for file upload)
-Wait for processing to complete
-
-Review Results:
-
-Compare original and synthetic emails side-by-side
-Check highlighted changes (color-coded by type)
-Review validation results for any issues
-
-Export Data (optional):
-Click "Export as CSV" to download the results
+## Contributing
+Contributions are welcome! If you'd like to improve Email Synthesizer, feel free to fork the repository and submit a pull request.
